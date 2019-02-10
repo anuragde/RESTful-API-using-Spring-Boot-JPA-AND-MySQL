@@ -1,0 +1,15 @@
+com/github/service/JPAConfig.class
+com/github/entity/Vehicle.class
+com/github/repository/VehicleRepository.class
+com/github/entity/Tires.class
+com/github/service/VehicleServiceImplementation.class
+com/github/Application.class
+com/github/service/ReadingsService.class
+com/github/service/VehicleService.class
+com/github/service/ReadingsServiceImplementation.class
+com/github/exception/BadRequestException.class
+com/github/entity/Reading.class
+com/github/controller/VehicleController.class
+com/github/SwaggerConfig.class
+com/github/repository/ReadingsRepository.class
+com/github/controller/ReadingsController.class
