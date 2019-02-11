@@ -1,0 +1,47 @@
+package rules;
+import com.github.entity.Reading;
+import com.github.entity.Vehicle;
+import com.github.entity.Alert;
+import com.github.entity.Tires;
+import com.github.repository.VehicleRepository
+import com.github.repository.AlertRepository
+import org.springframework.beans.factory.annotation.Autowired;
+global com.github.entity.Alert alert;
+
+
+rule "engine RPM"
+	when
+	    reading: Reading()
+	    vehicle: Vehicle(getVin() == reading.getVin(), getRedlineRpm() < reading.getEngineRpm())
+	then
+		alert.setPriority("High");
+
+	end
+
+rule "fuel Volume"
+	when
+	    reading: Reading()
+	    vehicle: Vehicle(getVin() == reading.getVin(), (0.1 * getMaxFuelVolume()) > reading.getFuelVolume())
+	then
+		alert.setPriority("Medium");
+
+	end
+
+rule "tire Pressure"
+	when
+	    reading: Reading()
+	    tires: Tires(reading.getTires().frontLeft < 32 || reading.getTires().frontLeft > 36 || reading.getTires().rearLeft < 32 || reading.getTires().rearLeft > 36
+	                    || reading.getTires().frontRight < 32 || reading.getTires().frontRight > 36 || reading.getTires().rearRight < 32 || reading.getTires().rearRight > 36)
+
+	then
+		alert.setPriority("Low");
+	end
+
+rule "engine Condition"
+	when
+	    reading: Reading(reading.isCheckEngineLightOn() || reading.isEngineCoolantLow())
+
+	then
+		alert.setPriority("Low");
+	end
+

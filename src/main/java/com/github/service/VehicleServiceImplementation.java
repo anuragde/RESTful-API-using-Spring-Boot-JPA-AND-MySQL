@@ -20,7 +20,7 @@ public class VehicleServiceImplementation implements VehicleService {
 
     @Transactional()
     public Vehicle findOne(String vin) {
-        Optional<Vehicle> vehicle = vehicleRepository.findById(vin);
+        Optional<Vehicle> vehicle = vehicleRepository.findByVin(vin);
         if (!vehicle.isPresent()) {
             throw new ResourceNotFoundException("Vehicle with vin " + vin + " doesn't exist.");
         }
@@ -49,7 +49,7 @@ public class VehicleServiceImplementation implements VehicleService {
 
     @Transactional()
     public void delete(String vin) {
-        Optional<Vehicle> vehicleOptional = vehicleRepository.findById(vin);
+        Optional<Vehicle> vehicleOptional = vehicleRepository.findByVin(vin);
         if (!vehicleOptional.isPresent()) {
             throw new ResourceNotFoundException("Vehicle with VIN " + vin + " doesn't exist.");
         }

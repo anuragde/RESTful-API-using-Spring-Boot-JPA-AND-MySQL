@@ -7,6 +7,7 @@ import javax.persistence.*;
 
 @Component
 @Entity
+@Embeddable
 public class Reading {
 
     @Id

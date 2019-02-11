@@ -20,10 +20,12 @@ public class ReadingsController {
     @Autowired
     ReadingsService readingsService;
 
-    @RequestMapping(value = "/readings/", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
+    @RequestMapping(value = "/readings", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
             consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ApiOperation(value = "inserts vehicle readings into database")
     public Reading create(@RequestBody Reading reading) {
-        return readingsService.create(reading);
+        Reading returnReading = readingsService.create(reading);
+        readingsService.checkAlert(reading);
+        return returnReading;
     }
 }
