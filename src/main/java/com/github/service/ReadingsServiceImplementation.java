@@ -7,6 +7,7 @@ import com.github.exception.BadRequestException;
 import com.github.repository.AlertRepository;
 import com.github.repository.ReadingsRepository;
 import com.github.repository.VehicleRepository;
+import org.hibernate.FlushMode;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,7 @@ import java.util.UUID;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityManager;
+import javax.servlet.http.HttpSession;
 import javax.transaction.Transactional;
 import java.util.Optional;
 
@@ -61,10 +63,12 @@ public class ReadingsServiceImplementation implements ReadingsService {
         kieSession.insert(reading);
         kieSession.fireAllRules();
         kieSession.dispose();
-        // alert.setU_id(randomUUIDString);
+
+        //alert.setUuid(uuid);
         alert.setReading(reading);
-        alert.setVin(reading.getVin());
         if (alert.getPriority().equals("High") || alert.getPriority().equals("Low") || alert.getPriority().equals("Medium"))
             entityManager.persist(alert);
+        entityManager.flush();
+        entityManager.clear();
     }
 }

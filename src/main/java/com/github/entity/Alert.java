@@ -19,6 +19,7 @@ public class Alert {
     private Reading reading;
     private String priority;
 
+
     public Reading getReading() {
         return reading;
     }

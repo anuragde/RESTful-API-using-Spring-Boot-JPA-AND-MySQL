@@ -1,9 +1,10 @@
 package com.github.entity;
 
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
+import java.time.Instant;
 
 @Component
 @Entity
@@ -14,7 +15,7 @@ public class Reading {
     private String vin;
     private double latitude;
     private double longitude;
-    private String timestamp;
+    private Instant timestamp;
     private double fuelVolume;
     private int speed;
     private int engineHp;
@@ -59,11 +60,11 @@ public class Reading {
         this.longitude = longitude;
     }
 
-    public String getTimestamp() {
+    public Instant getTimestamp() {
         return timestamp;
     }
 
-    public void setTimestamp(String timestamp) {
+    public void setTimestamp(Instant timestamp) {
         this.timestamp = timestamp;
     }
 

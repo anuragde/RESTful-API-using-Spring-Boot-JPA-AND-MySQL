@@ -1,43 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ce911c0-e5a4-4896-867e-abfca12cd119" name="Default Changelist" comment="implement /vehicles and /readings end points&#10;&#10;1. Load vehicle details in bulk via a PUT /vehicles endpoint.&#10;2. If the vehicle with same VIN is already present, update the record in db.&#10;3. Ingest readings from these vehicles via a POST /readings.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/controller/AlertController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/entity/Alert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/repository/AlertRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/service/AlertService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/service/AlertServiceImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/kmodule.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/rules/rules.drl" afterDir="false" />
+    <list default="true" id="0ce911c0-e5a4-4896-867e-abfca12cd119" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/controller/ReadingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/controller/ReadingsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/controller/AlertController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/controller/AlertController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/entity/Alert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/entity/Alert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/entity/Reading.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/entity/Reading.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/exception/BadRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/exception/BadRequestException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/repository/VehicleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/repository/VehicleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/service/ReadingsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/service/ReadingsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/entity/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/entity/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/repository/AlertRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/repository/AlertRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/service/AlertService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/service/AlertService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/service/AlertServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/service/AlertServiceImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/service/ReadingsServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/service/ReadingsServiceImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/service/VehicleServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/service/VehicleServiceImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/controller/ReadingsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/controller/ReadingsController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/github/entity/Reading.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/entity/Reading.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/exception/BadRequestException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/exception/BadRequestException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/repository/VehicleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/repository/VehicleRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/service/ReadingsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/service/ReadingsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/entity/Vehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/entity/Vehicle.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/github/service/ReadingsServiceImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/service/ReadingsServiceImplementation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/service/VehicleServiceImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/service/VehicleServiceImplementation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-boot-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-boot-1.0-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.github.ApplicationTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.github.ApplicationTest.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/service/ReadingsServiceImplementation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+            <state relative-caret-position="350">
+              <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1078#1079#0" expanded="true" />
@@ -65,9 +41,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/repository/AlertRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="73" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="73" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/service/VehicleServiceImplementation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
+            <state relative-caret-position="918">
               <caret line="51" column="72" selection-start-line="51" selection-start-column="72" selection-end-line="51" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -91,22 +79,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/service/ReadingsService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/entity/Vehicle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/service/AlertService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            <state relative-caret-position="1008">
+              <caret line="84" column="44" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/controller/AlertController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="289">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,33 +103,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/entity/Reading.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
-              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1297#1298#0" expanded="true" />
-                <element signature="e#1339#1340#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/entity/Alert.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+            <state relative-caret-position="180">
+              <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
               <folding>
                 <element signature="e#360#361#0" expanded="true" />
                 <element signature="e#390#391#0" expanded="true" />
                 <element signature="e#437#438#0" expanded="true" />
                 <element signature="e#475#476#0" expanded="true" />
-                <element signature="e#505#506#0" expanded="true" />
-                <element signature="e#531#532#0" expanded="true" />
-                <element signature="e#569#570#0" expanded="true" />
-                <element signature="e#599#600#0" expanded="true" />
+                <element signature="e#540#541#0" expanded="true" />
+                <element signature="e#566#567#0" expanded="true" />
+                <element signature="e#604#605#0" expanded="true" />
+                <element signature="e#634#635#0" expanded="true" />
                 <element signature="e#384#385#0" expanded="true" />
                 <element signature="e#411#412#0" expanded="true" />
               </folding>
@@ -161,11 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/rules/rules.drl">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="72">
+              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -173,8 +135,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/service/AlertServiceImplementation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="414">
+              <caret line="23" column="88" selection-start-line="23" selection-start-column="88" selection-end-line="23" selection-end-column="88" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/service/AlertService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -216,7 +190,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/github/entity.java" />
         <option value="$USER_HOME$/.m2/settings.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/AppTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/entity/Vehicle.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/service/VehicleService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/repository/ReadingsRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/entity/Tires.java" />
@@ -229,10 +202,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/kmodule.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/controller/VehicleController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/service/ReadingsService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/controller/AlertController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/repository/AlertRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/service/AlertService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/service/AlertServiceImplementation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/Application.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/repository/VehicleRepository.java" />
@@ -241,9 +210,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/github/exception/BadRequestException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/controller/ReadingsController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/rules/rules.drl" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/service/ReadingsServiceImplementation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/entity/Vehicle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/controller/AlertController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/entity/Reading.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/service/AlertService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/repository/AlertRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/service/AlertServiceImplementation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/entity/Alert.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/service/ReadingsServiceImplementation.java" />
       </list>
     </option>
   </component>
@@ -385,7 +359,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549875036157" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549902063928" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -577,7 +551,14 @@
       <option name="project" value="LOCAL" />
       <updated>1549758918993</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="implement drools rule engine to trigger alerts based on conditions">
+      <created>1549875105424</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1549875105424</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -601,7 +582,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113595000" />
+    <option name="totallyTimeSpent" value="125707000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -616,7 +597,7 @@
     <frame x="0" y="32" width="1920" height="967" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27628756" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27628756" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -626,7 +607,7 @@
       <window_info id="Web" order="7" side_tool="true" type="WINDOWED" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32885087" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49624464" weight="0.57334965" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49624464" visible="true" weight="0.45354524" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.6173594" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -736,7 +717,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="implement /vehicles and /readings end points" />
     <MESSAGE value="implement /vehicles and /readings end points&#10;&#10;1. Load vehicle details in bulk via a PUT /vehicles endpoint.&#10;2. If the vehicle with same VIN is already present, update the record in db.&#10;3. Ingest readings from these vehicles via a POST /readings." />
-    <option name="LAST_COMMIT_MESSAGE" value="implement /vehicles and /readings end points&#10;&#10;1. Load vehicle details in bulk via a PUT /vehicles endpoint.&#10;2. If the vehicle with same VIN is already present, update the record in db.&#10;3. Ingest readings from these vehicles via a POST /readings." />
+    <MESSAGE value="implement drools rule engine to trigger alerts based on conditions" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement drools rule engine to trigger alerts based on conditions" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -745,13 +727,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/github/service/ReadingsServiceImplementation.java</url>
-          <line>63</line>
+          <line>67</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/github/service/ReadingsServiceImplementation.java</url>
-          <line>26</line>
+          <line>29</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
@@ -841,13 +823,6 @@
     <entry file="file://$PROJECT_DIR$/spring-boot/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -882,30 +857,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/entity/Vehicle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-89">
-          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/exception/BadRequestException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/repository/VehicleRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -939,16 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/repository/AlertRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/controller/ReadingsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -969,6 +914,115 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/rules/rules.drl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/repository/VehicleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/entity/Reading.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1297#1298#0" expanded="true" />
+            <element signature="e#1339#1340#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/JoinColumn.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-567">
+          <caret line="141" column="20" selection-start-line="141" selection-start-column="19" selection-end-line="141" selection-end-column="20" />
+          <folding>
+            <element signature="e#4677#4678#0" expanded="true" />
+            <element signature="e#4714#4715#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/controller/AlertController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/entity/Vehicle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="84" column="44" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/service/VehicleServiceImplementation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="51" column="72" selection-start-line="51" selection-start-column="72" selection-end-line="51" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#956#957#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/repository/AlertRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="73" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/service/AlertService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/service/AlertServiceImplementation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="88" selection-start-line="23" selection-start-column="88" selection-end-line="23" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/service/VehicleService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -979,59 +1033,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/service/AlertServiceImplementation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/service/AlertService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/controller/AlertController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/rules/rules.drl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/service/VehicleServiceImplementation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="51" column="72" selection-start-line="51" selection-start-column="72" selection-end-line="51" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#890#891#0" expanded="true" />
-            <element signature="e#956#957#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/service/ReadingsServiceImplementation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+        <state relative-caret-position="350">
+          <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1078#1079#0" expanded="true" />
@@ -1040,34 +1045,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/entity/Reading.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1297#1298#0" expanded="true" />
-            <element signature="e#1339#1340#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/entity/Alert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        <state relative-caret-position="180">
+          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
           <folding>
             <element signature="e#360#361#0" expanded="true" />
             <element signature="e#390#391#0" expanded="true" />
             <element signature="e#437#438#0" expanded="true" />
             <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
             <element signature="e#384#385#0" expanded="true" />
             <element signature="e#411#412#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
         </state>
       </provider>
     </entry>

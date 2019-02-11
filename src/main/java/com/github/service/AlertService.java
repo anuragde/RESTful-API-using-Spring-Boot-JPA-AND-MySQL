@@ -11,4 +11,6 @@ public interface AlertService {
 
     List<Alert> findAllByVehicleReading_Vin(Reading reading);
 
+    List<Alert> findAllByPriorityAndReading_VinAndReading_Timestamp(Reading reading);
+
 }

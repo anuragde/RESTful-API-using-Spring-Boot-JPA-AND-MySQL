@@ -26,4 +26,12 @@ public class AlertController {
         return alertService.findAllByVehicleReading_Vin(reading);
     }
 
+
+    @RequestMapping(value = "/getRecentHighAlerts/{vin}", method = RequestMethod.GET)
+    public List<Alert> getRecentHighAlerts(@PathVariable String vin) {
+        Reading reading = new Reading();
+        reading.setVin(vin);
+        return alertService.findAllByPriorityAndReading_VinAndReading_Timestamp(reading);
+    }
+
 }
