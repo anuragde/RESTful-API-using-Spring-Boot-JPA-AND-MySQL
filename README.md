@@ -1,7 +1,19 @@
 # RESTful-API-using-Spring-Boot-JPA-AND-MySQL
 Provides multiple API end points
 
-1. PUT /vehicles JSON Input format:
+
+1. API endpoints to `PUT /vehicles` Vehicle details, `POST /readings`, `GET`, `UPDATE`, `DELETE` records.
+2. API metrics by actuator and API documentation by Springfox swagger.
+3. Generate alerts with given priority when following rules are triggered
+   i.   Rule: engineRpm > readlineRpm, Priority: HIGH
+   ii.  Rule: fuelVolume < 10% of maxFuelVolume, Priority: MEDIUM
+   iii. Rule: tire pressure of any tire < 32psi || > 36psi , Priority: LOW
+   iv.  Rule: engineCoolantLow = true || checkEngineLightOn = true, Priority: LOW
+4. API endpoints to `GET` AllAlerts generated for a Vehicle and `GET` recentHighAlerts. 
+
+Try it out @ http://vehicletracker.us-east-1.elasticbeanstalk.com/swagger-ui.html 
+
+`PUT /vehicles` JSON Input format:
 
 ````
 [
@@ -26,7 +38,7 @@ Provides multiple API end points
 ]
 ````
 
-2. POST /readings
+`POST /readings` JSON Input format:
 
 ````
 {
