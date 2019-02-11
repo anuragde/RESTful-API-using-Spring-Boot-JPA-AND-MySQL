@@ -9,7 +9,7 @@ Provides multiple API end points
    * Rule: fuelVolume < 10% of maxFuelVolume, Priority: MEDIUM
    * Rule: tire pressure of any tire < 32psi || > 36psi , Priority: LOW
    * Rule: engineCoolantLow = true || checkEngineLightOn = true, Priority: LOW
-4. API endpoints to `GET` AllAlerts generated for a Vehicle and `GET` recentHighAlerts. 
+4. API endpoints to `GET` AllAlerts generated for a vehicle and `GET` recentHighAlerts of a vehicle.
 
 Try it out @ http://vehicletracker.us-east-1.elasticbeanstalk.com/swagger-ui.html 
 
