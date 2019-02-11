@@ -1,4 +1,4 @@
-# RESTful-API-using-Spring-Boot-JPA-AND-MySQL
+# RESTful-API-using-Spring-Boot-JPA-and-MySQL-for-Fleet-Management
 Provides multiple API end points
 
 
