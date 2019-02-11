@@ -1,5 +1,5 @@
 # RESTful-API-using-Spring-Boot-JPA-and-MySQL-for-Fleet-Management
-Provides multiple API end points
+Provides multiple API end points. Try it out @ http://vehicletracker.us-east-1.elasticbeanstalk.com/swagger-ui.html 
 
 
 1. API endpoints to `PUT /vehicles` Vehicle details, `POST /readings`, `GET`, `UPDATE`, `DELETE` records.
@@ -11,7 +11,7 @@ Provides multiple API end points
    * Rule: engineCoolantLow = true || checkEngineLightOn = true, Priority: LOW
 4. API endpoints to `GET` all alerts generated for a vehicle and `GET` recent high alerts of a vehicle.
 
-Try it out @ http://vehicletracker.us-east-1.elasticbeanstalk.com/swagger-ui.html 
+
 
 `PUT /vehicles` JSON Input format:
 
