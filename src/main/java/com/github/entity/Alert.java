@@ -1,5 +1,6 @@
 package com.github.entity;
 
+import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 
@@ -10,12 +11,12 @@ public class Alert {
     @Column(insertable = false, updatable = false)
     String vin;
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(columnDefinition = "serial")
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @Column(columnDefinition = "serial")
     private int u_id;
     @Embedded
-    @ManyToOne(targetEntity = Reading.class)
-    @JoinColumn(name = "vin")
+    @ManyToOne
+    @JoinColumn(name = "id")
     private Reading reading;
     private String priority;
 
@@ -26,6 +27,9 @@ public class Alert {
 
     public void setReading(Reading reading) {
         this.reading = reading;
+        setU_id(reading.getId());
+
+
     }
 
     public String getVin() {

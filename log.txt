@@ -1,0 +1,583 @@
+Attaching to restfulapiusingspringbootjpaandmysql_docker-mysql_1, restfulapiusingspringbootjpaandmysql_spring-boot-jpa-docker-webapp_1
+[36mdocker-mysql_1                   |[0m Initializing database
+[36mdocker-mysql_1                   |[0m 2019-02-13T18:41:54.303101Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+[36mdocker-mysql_1                   |[0m 2019-02-13T18:41:54.303197Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.15) initializing of server in progress as process 29
+[36mdocker-mysql_1                   |[0m 2019-02-13T18:41:54.304856Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+[36mdocker-mysql_1                   |[0m 2019-02-13T18:41:54.304864Z 0 [ERROR] [MY-013236] [Server] Newly created data directory /var/lib/mysql/ is unusable. You can safely remove it.
+[36mdocker-mysql_1                   |[0m 2019-02-13T18:41:54.304919Z 0 [ERROR] [MY-010119] [Server] Aborting
+[36mdocker-mysql_1                   |[0m 2019-02-13T18:41:54.305983Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.15)  MySQL Community Server - GPL.
+[36mrestfulapiusingspringbootjpaandmysql_docker-mysql_1 exited with code 1
+[0m[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m   .   ____          _            __ _ _
+[33mspring-boot-jpa-docker-webapp_1  |[0m  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+[33mspring-boot-jpa-docker-webapp_1  |[0m ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+[33mspring-boot-jpa-docker-webapp_1  |[0m  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+[33mspring-boot-jpa-docker-webapp_1  |[0m   '  |____| .__|_| |_|_| |_\__, | / / / /
+[33mspring-boot-jpa-docker-webapp_1  |[0m  =========|_|==============|___/=/_/_/_/
+[33mspring-boot-jpa-docker-webapp_1  |[0m  :: Spring Boot ::        (v2.1.2.RELEASE)
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:41:57.421  INFO 1 --- [           main] com.github.Application                   : Starting Application v1.0-SNAPSHOT on fef5d8da22f0 with PID 1 (/spring-boot-docker-1.0.jar started by root in /)
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:41:57.425  INFO 1 --- [           main] com.github.Application                   : No active profile set, falling back to default profiles: default
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:01.164  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:01.296  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119ms. Found 3 repository interfaces.
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:02.590  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a798b286] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:02.656  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$2718ffb8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:03.809  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:03.904  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:03.908  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:03.939  INFO 1 --- [           main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/opt/jdk-11/lib/server:/opt/jdk-11/lib:/opt/jdk-11/../lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:04.124  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:04.124  INFO 1 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6539 ms
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:06.347  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:07.665 ERROR 1 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:157) ~[spring-jdbc-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115) ~[spring-jdbc-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78) ~[spring-jdbc-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:319) ~[spring-jdbc-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:356) ~[spring-jdbc-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:73) ~[spring-boot-autoconfigure-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:142) ~[spring-boot-autoconfigure-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:112) ~[spring-boot-autoconfigure-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$c66f74f5.CGLIB$jpaVendorAdapter$5(<generated>) ~[spring-boot-autoconfigure-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$c66f74f5$$FastClassBySpringCGLIB$$34e0cebe.invoke(<generated>) ~[spring-boot-autoconfigure-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363) ~[spring-context-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$c66f74f5.jpaVendorAdapter(<generated>) ~[spring-boot-autoconfigure-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1244) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1244) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083) ~[spring-context-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:853) ~[spring-context-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.github.Application.main(Application.java:15) ~[classes!/:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[spring-boot-docker-1.0.jar:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[spring-boot-docker-1.0.jar:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[spring-boot-docker-1.0.jar:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[spring-boot-docker-1.0.jar:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.NativeSession.connect(NativeSession.java:152) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	... 82 common frames omitted
+[33mspring-boot-jpa-docker-webapp_1  |[0m Caused by: java.net.ConnectException: Connection refused (Connection refused)
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.Socket.connect(Socket.java:591) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	... 85 common frames omitted
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:07.669  WARN 1 --- [           main] o.s.b.a.orm.jpa.DatabaseLookup           : Unable to determine jdbc url from datasource
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:328) ~[spring-jdbc-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:356) ~[spring-jdbc-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:73) ~[spring-boot-autoconfigure-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:142) ~[spring-boot-autoconfigure-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:112) ~[spring-boot-autoconfigure-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$c66f74f5.CGLIB$jpaVendorAdapter$5(<generated>) ~[spring-boot-autoconfigure-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$c66f74f5$$FastClassBySpringCGLIB$$34e0cebe.invoke(<generated>) ~[spring-boot-autoconfigure-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363) ~[spring-context-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$c66f74f5.jpaVendorAdapter(<generated>) ~[spring-boot-autoconfigure-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1244) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1244) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083) ~[spring-context-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:853) ~[spring-context-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.github.Application.main(Application.java:15) ~[classes!/:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[spring-boot-docker-1.0.jar:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[spring-boot-docker-1.0.jar:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[spring-boot-docker-1.0.jar:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[spring-boot-docker-1.0.jar:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81) ~[spring-jdbc-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:319) ~[spring-jdbc-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	... 68 common frames omitted
+[33mspring-boot-jpa-docker-webapp_1  |[0m Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:157) ~[spring-jdbc-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115) ~[spring-jdbc-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78) ~[spring-jdbc-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	... 69 common frames omitted
+[33mspring-boot-jpa-docker-webapp_1  |[0m Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.NativeSession.connect(NativeSession.java:152) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	... 82 common frames omitted
+[33mspring-boot-jpa-docker-webapp_1  |[0m Caused by: java.net.ConnectException: Connection refused (Connection refused)
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.Socket.connect(Socket.java:591) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	... 85 common frames omitted
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:07.791  INFO 1 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	name: default
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	...]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:07.997  INFO 1 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:08.001  INFO 1 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:08.366  INFO 1 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:08.821  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:09.828 ERROR 1 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:179) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:119) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083) ~[spring-context-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:853) ~[spring-context-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.github.Application.main(Application.java:15) ~[classes!/:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[spring-boot-docker-1.0.jar:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[spring-boot-docker-1.0.jar:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[spring-boot-docker-1.0.jar:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[spring-boot-docker-1.0.jar:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.NativeSession.connect(NativeSession.java:152) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	... 55 common frames omitted
+[33mspring-boot-jpa-docker-webapp_1  |[0m Caused by: java.net.ConnectException: Connection refused (Connection refused)
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.Socket.connect(Socket.java:591) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	... 58 common frames omitted
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:09.829  WARN 1 --- [           main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : Communications link failure
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:09.852  INFO 1 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:09.886  INFO 1 --- [           main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+[33mspring-boot-jpa-docker-webapp_1  |[0m Hibernate: drop table if exists alert
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:11.215  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:12.219 ERROR 1 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:77) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:53) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083) ~[spring-context-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:853) ~[spring-context-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.github.Application.main(Application.java:15) ~[classes!/:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[spring-boot-docker-1.0.jar:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[spring-boot-docker-1.0.jar:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[spring-boot-docker-1.0.jar:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[spring-boot-docker-1.0.jar:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.NativeSession.connect(NativeSession.java:152) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	... 55 common frames omitted
+[33mspring-boot-jpa-docker-webapp_1  |[0m Caused by: java.net.ConnectException: Connection refused (Connection refused)
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.Socket.connect(Socket.java:591) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	... 58 common frames omitted
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:12.219  WARN 1 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08S01
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:12.219 ERROR 1 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:12.229  WARN 1 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:12.233  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:12.256  INFO 1 --- [           main] ConditionEvaluationReportLoggingListener : 
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[33mspring-boot-jpa-docker-webapp_1  |[0m 2019-02-13 18:42:12.261 ERROR 1 --- [           main] o.s.boot.SpringApplication               : Application run failed
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1745) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083) ~[spring-context-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:853) ~[spring-context-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.2.RELEASE.jar!/:2.1.2.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.github.Application.main(Application.java:15) ~[classes!/:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[spring-boot-docker-1.0.jar:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[spring-boot-docker-1.0.jar:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[spring-boot-docker-1.0.jar:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[spring-boot-docker-1.0.jar:1.0-SNAPSHOT]
+[33mspring-boot-jpa-docker-webapp_1  |[0m Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:402) ~[spring-orm-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741) ~[spring-beans-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	... 22 common frames omitted
+[33mspring-boot-jpa-docker-webapp_1  |[0m Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:115) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:69) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:77) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:53) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.4.RELEASE.jar!/:5.1.4.RELEASE]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	... 26 common frames omitted
+[33mspring-boot-jpa-docker-webapp_1  |[0m Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.2.0.jar!/:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43) ~[hibernate-core-5.3.7.Final.jar!/:5.3.7.Final]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	... 42 common frames omitted
+[33mspring-boot-jpa-docker-webapp_1  |[0m Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mspring-boot-jpa-docker-webapp_1  |[0m The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.NativeSession.connect(NativeSession.java:152) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	... 55 common frames omitted
+[33mspring-boot-jpa-docker-webapp_1  |[0m Caused by: java.net.ConnectException: Connection refused (Connection refused)
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at java.base/java.net.Socket.connect(Socket.java:591) ~[na:na]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65) ~[mysql-connector-java-8.0.15.jar!/:8.0.15]
+[33mspring-boot-jpa-docker-webapp_1  |[0m 	... 58 common frames omitted
+[33mspring-boot-jpa-docker-webapp_1  |[0m 
+[33mrestfulapiusingspringbootjpaandmysql_spring-boot-jpa-docker-webapp_1 exited with code 1
+[0m

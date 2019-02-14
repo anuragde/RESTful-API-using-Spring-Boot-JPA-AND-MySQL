@@ -1,0 +1,27 @@
+version: '3.3'
+
+services: 
+  docker-mysql:
+    image: mysql
+    volumes:
+      - ./db-data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: test
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+  spring-boot-jpa-docker-webapp:
+    depends_on:
+      - docker-mysql
+    image: springboot_docker
+    ports:
+      - "8080:8080"
+    environment:
+      DATABASE_HOST: docker-mysql:3306
+      DATABASE_USER: root
+      DATABASE_PASSWORD: root
+      DATABASE_NAME: test  
+      DATABASE_PORT: 3306
+volumes:
+    db_data: {}

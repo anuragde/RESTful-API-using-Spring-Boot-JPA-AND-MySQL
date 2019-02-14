@@ -11,7 +11,12 @@ import java.time.Instant;
 @Embeddable
 public class Reading {
 
+
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(columnDefinition = "serial")
+    private int id;
     private String vin;
     private double latitude;
     private double longitude;
@@ -25,6 +30,13 @@ public class Reading {
     private int engineRpm;
 
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
     @Embedded
     private Tires tires;
 

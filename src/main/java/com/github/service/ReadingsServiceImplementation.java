@@ -55,18 +55,21 @@ public class ReadingsServiceImplementation implements ReadingsService {
 
     @Transactional
     public void checkAlert(Reading reading) {
-        Alert alert = new Alert();
         UUID uuid = UUID.randomUUID();
         String randomUUIDString = uuid.toString();
+        Alert alert = new Alert();
         KieSession kieSession = kieContainer.newKieSession("rulesSession");
-        kieSession.setGlobal("alert", alert);
+//        kieSession.setGlobal("alert", alert);
+        kieSession.insert(alert);
         kieSession.insert(reading);
         kieSession.fireAllRules();
         kieSession.dispose();
 
+
         //alert.setUuid(uuid);
-        alert.setReading(reading);
+
         if (alert.getPriority().equals("High") || alert.getPriority().equals("Low") || alert.getPriority().equals("Medium"))
+            alert.setReading(reading);
             entityManager.persist(alert);
         entityManager.flush();
         entityManager.clear();

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="myapp_beanstalk">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/myapp_beanstalk.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
