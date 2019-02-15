@@ -85,7 +85,7 @@ public class ReadingsServiceImplementation implements ReadingsService {
            //create a new SNS client and set endpoint
             AmazonSNS snsClient = AmazonSNSClient.builder().withRegion("us-east-1").build();
             String message = "High Alert triggered for Vehicle: " + reading.getVin() + " located currently at" + reading.getLatitude() + " , " + reading.getLongitude();
-            String phoneNumber = "+13463070105";
+            String phoneNumber = "+11";
             Optional<Vehicle> optionalVehicle = vehicleRepository.findByVin(reading.getVin());
             if(optionalVehicle.isPresent() && optionalVehicle.get().getRegisteredMobile() > 1000 && Long.toString(optionalVehicle.get().getRegisteredMobile()).length() == 10)
                 phoneNumber = Long.toString(optionalVehicle.get().getRegisteredMobile());
