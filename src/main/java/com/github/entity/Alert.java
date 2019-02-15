@@ -11,8 +11,8 @@ public class Alert {
     @Column(insertable = false, updatable = false)
     String vin;
     @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    @Column(columnDefinition = "serial")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(columnDefinition = "serial")
     private int u_id;
     @Embedded
     @ManyToOne

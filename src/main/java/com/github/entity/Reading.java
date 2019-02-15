@@ -4,17 +4,18 @@ package com.github.entity;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.Instant;
 
 @Component
 @Entity
 @Embeddable
-public class Reading {
+public class Reading  {
 
 
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(columnDefinition = "serial")
     private int id;
     private String vin;

@@ -19,6 +19,9 @@ public class Vehicle {
     private String model;
     private int year;
     private int redlineRpm;
+
+
+    private long registeredMobile;
     private double maxFuelVolume;
     private String lastServiceDate;
 
@@ -78,16 +81,27 @@ public class Vehicle {
         this.lastServiceDate = lastServiceDate;
     }
 
+
+    public long getRegisteredMobile() {
+        return registeredMobile;
+    }
+
+    public void setRegisteredMobile(long registeredMobile) {
+        this.registeredMobile = registeredMobile;
+    }
+
     @Override
     public String toString() {
         return "Vehicle{" +
-                "vin='" + vin + '\'' +
+                "id=" + id +
+                ", vin='" + vin + '\'' +
                 ", make='" + make + '\'' +
                 ", model='" + model + '\'' +
                 ", year=" + year +
-                ", redLineRpm=" + redlineRpm +
+                ", redlineRpm=" + redlineRpm +
+                ", registeredMobile=" + registeredMobile +
                 ", maxFuelVolume=" + maxFuelVolume +
-                ", lastServiceDate=" + lastServiceDate +
+                ", lastServiceDate='" + lastServiceDate + '\'' +
                 '}';
     }
 }

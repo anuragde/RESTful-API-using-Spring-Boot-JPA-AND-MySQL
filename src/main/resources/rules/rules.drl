@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 rule "engine RPM"
 	when
+	    entityManager: AlertRepository()
 	    alert: Alert()
 	    reading: Reading()
 	    vehicle: Vehicle(getVin() == reading.getVin(), getRedlineRpm() < reading.getEngineRpm())
@@ -16,21 +17,25 @@ rule "engine RPM"
 
 		alert.setPriority("High");
         alert.setReading(reading);
+        entityManager.save(alert);
 	end
 
 rule "fuel Volume"
 	when
+	    entityManager: AlertRepository()
         alert: Alert()
 	    reading: Reading()
 	    vehicle: Vehicle(getVin() == reading.getVin(), (0.1 * getMaxFuelVolume()) > reading.getFuelVolume())
 	then
-		alert.setPriority("Medium");
+		alert.setPriority("High");
         alert.setReading(reading);
+        entityManager.save(alert);
 
 	end
 
 rule "tire Pressure"
 	when
+	    entityManager: AlertRepository()
 	    alert: Alert()
 	    reading: Reading()
 	    tires: Tires(reading.getTires().frontLeft < 32 || reading.getTires().frontLeft > 36 || reading.getTires().rearLeft < 32 || reading.getTires().rearLeft > 36
@@ -38,18 +43,21 @@ rule "tire Pressure"
 
 	then
 
-		alert.setPriority("Low");
+		alert.setPriority("High");
 		alert.setReading(reading);
+		entityManager.save(alert);
 
 	end
 
 rule "engine Condition"
 	when
+	    entityManager: AlertRepository()
         alert: Alert()
 	    reading: Reading(reading.isCheckEngineLightOn() || reading.isEngineCoolantLow())
 
 	then
-		alert.setPriority("Low");
+		alert.setPriority("High");
 		alert.setReading(reading);
+		entityManager.save(alert);
 	end
 

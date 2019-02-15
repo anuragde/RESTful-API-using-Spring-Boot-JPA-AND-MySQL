@@ -1,5 +1,14 @@
 package com.github.service;
 
+import com.amazonaws.auth.ClasspathPropertiesFileCredentialsProvider;
+import com.amazonaws.regions.Region;
+import com.amazonaws.regions.Regions;
+import com.amazonaws.services.sns.AmazonSNS;
+import com.amazonaws.services.sns.AmazonSNSAsyncClient;
+import com.amazonaws.services.sns.AmazonSNSClient;
+import com.amazonaws.services.sns.model.MessageAttributeValue;
+import com.amazonaws.services.sns.model.PublishRequest;
+import com.amazonaws.services.sns.model.PublishResult;
 import com.github.entity.Alert;
 import com.github.entity.Reading;
 import com.github.entity.Vehicle;
@@ -12,6 +21,8 @@ import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.UUID;
 
 
@@ -33,7 +44,7 @@ public class ReadingsServiceImplementation implements ReadingsService {
     AlertRepository alertRepository;
 
     @Autowired
-    private EntityManager entityManager;
+    AlertRepository entityManager;
 
     @Autowired
     public ReadingsServiceImplementation(KieContainer kieContainer) {
@@ -56,22 +67,55 @@ public class ReadingsServiceImplementation implements ReadingsService {
     @Transactional
     public void checkAlert(Reading reading) {
         UUID uuid = UUID.randomUUID();
-        String randomUUIDString = uuid.toString();
         Alert alert = new Alert();
+
         KieSession kieSession = kieContainer.newKieSession("rulesSession");
 //        kieSession.setGlobal("alert", alert);
+        kieSession.insert(entityManager);
         kieSession.insert(alert);
         kieSession.insert(reading);
         kieSession.fireAllRules();
-        kieSession.dispose();
+
 
 
         //alert.setUuid(uuid);
 
-        if (alert.getPriority().equals("High") || alert.getPriority().equals("Low") || alert.getPriority().equals("Medium"))
+        if (alert.getPriority().equals("High") || alert.getPriority().equals("Low") || alert.getPriority().equals("Medium")){
+            //send sms to registered mobile number
+           //create a new SNS client and set endpoint
+            AmazonSNS snsClient = AmazonSNSClient.builder().withRegion("us-east-1").build();
+            String message = "High Alert triggered for Vehicle: " + reading.getVin() + " located currently at" + reading.getLatitude() + " , " + reading.getLongitude();
+            String phoneNumber = "+13463070105";
+            Optional<Vehicle> optionalVehicle = vehicleRepository.findByVin(reading.getVin());
+            if(optionalVehicle.isPresent() && optionalVehicle.get().getRegisteredMobile() > 1000 && Long.toString(optionalVehicle.get().getRegisteredMobile()).length() == 10)
+                phoneNumber = Long.toString(optionalVehicle.get().getRegisteredMobile());
+            Map<String, MessageAttributeValue> smsAttributes = new HashMap<>();
+            //<set SMS attributes>
+            sendSMSMessage(snsClient, message, phoneNumber, smsAttributes);
+
+            smsAttributes.put("AWS.SNS.SMS.SenderID", new MessageAttributeValue()
+                    .withStringValue("mySenderID") //The sender ID shown on the device.
+                    .withDataType("String"));
+            smsAttributes.put("AWS.SNS.SMS.SMSType", new MessageAttributeValue()
+                    .withStringValue("Transactional") //Sets the type to promotional.
+                    .withDataType("String"));
+
+
             alert.setReading(reading);
-            entityManager.persist(alert);
-        entityManager.flush();
-        entityManager.clear();
+
+        }
+
+//        entityManager.flush();
+//        entityManager.clear();
+        kieSession.dispose();
+    }
+
+    public static void sendSMSMessage(AmazonSNS snsClient, String message,
+                                      String phoneNumber, Map<String, MessageAttributeValue> smsAttributes) {
+        PublishResult result = snsClient.publish(new PublishRequest()
+                .withMessage(message)
+                .withPhoneNumber(phoneNumber)
+                .withMessageAttributes(smsAttributes));
+        System.out.println(result); // Prints the message ID.
     }
 }
