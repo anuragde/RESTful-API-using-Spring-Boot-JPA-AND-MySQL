@@ -9,9 +9,10 @@ Provides multiple API end points. Try it out @ http://vehicletracker.us-east-1.e
    * Rule: fuelVolume < 10% of maxFuelVolume, Priority: MEDIUM
    * Rule: tire pressure of any tire < 32psi || > 36psi , Priority: LOW
    * Rule: engineCoolantLow = true || checkEngineLightOn = true, Priority: LOW
-4. API endpoints to `GET` all alerts generated for a vehicle and `GET` recent high alerts of a vehicle.
+4. API endpoints to `GET` all alerts generated for a vehicle and `GET` recent high alerts of a vehicle
+5. Text message is sent to vehicle's registered mobile number via Amazon SNS when a high alert is triggered.
 
-
+Run the application using the commands in `rest.sh`.
 
 `PUT /vehicles` JSON Input format:
 
